@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/derutoco11/GitTest/issues"
   },
-  "homepage": "https://github.com/derutoco11/GitTest#readme"
+  "homepage": "https://github.com/derutoco11/GitTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
