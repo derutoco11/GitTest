@@ -1,0 +1,20 @@
+{
+  "name": "testprogram",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derutoco11/GitTest.git"
+  },
+  "author": "derutoco11",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derutoco11/GitTest/issues"
+  },
+  "homepage": "https://github.com/derutoco11/GitTest#readme",
+  "dependencies": {}
+}
