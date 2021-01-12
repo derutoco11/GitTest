@@ -5,23 +5,23 @@ const path = require('path');
 
 const app = new express();
 const ejs = require('ejs');
+const mongoose = require('mongoose');
 
 
 // const homePage = fs.readFileSync('index.html');
 // const aboutPage = fs.readFileSync('about.html');
 // const contactPage = fs.readFileSync('contact.html');
 // const bodyparser = require('body-parser');
-// const mongoose = require('mongoose');
 
-// const Players = require('./schema/Players');
+const Players = require('./schema/BlogPost');
 
-// mongoose.connect('mongodb://localhost:27017/jpnt', function (err) {
-//   if (err) {
-//     console.error(err);
-//   } else {
-//     console.log('connected to mongo.');
-//   }
-// });
+mongoose.connect('mongodb://localhost:27017/jpnt', function (err) {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('connected to mongo.');
+  }
+});
 
 // app.use(bodyparser());
 
