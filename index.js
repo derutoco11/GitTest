@@ -13,13 +13,13 @@ const mongoose = require('mongoose');
 // const contactPage = fs.readFileSync('contact.html');
 // const bodyparser = require('body-parser');
 
-const Players = require('./schema/BlogPost');
+// const Players = require('./models/BlogPost');
 
-mongoose.connect('mongodb://localhost:27017/jpnt', function (err) {
+mongoose.connect('mongodb://localhost:27017/myProject210114', function (err) {
   if (err) {
     console.error(err);
   } else {
-    console.log('connected to mongo.');
+    console.log('connected to mongoDB.');
   }
 });
 
@@ -40,6 +40,9 @@ app.get('/contact', (req, res) => {
 });
 app.get('/post', (req, res) => {
   res.render('post')
+});
+app.get('/posts/new', (req, res) => {
+  res.render('create')
 });
 // app.get("/", function (req, res, next) {
 // return res.render('index', { title: 'Hello, World.' });
